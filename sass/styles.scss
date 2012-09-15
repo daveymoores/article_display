@@ -3,3 +3,17 @@
 .panel {
 	margin: 30px 0px;
 }
+
+#columns  { 
+	height:  600px;  
+ 	-webkit-column-count: 3;  
+	-webkit-column-width: 140px; 
+	-webkit-column-gap: 25px; 
+}
+
+#viewport { width: 900px; height: 600px; }
+#flowedContent, #fixedContent { display: none; }
+
+#article_reader {
+	overflow-x: scroll;
+}

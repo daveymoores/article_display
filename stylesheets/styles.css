@@ -3,3 +3,27 @@
 .panel {
   margin: 30px 0px;
 }
+
+/* line 7, ../sass/styles.scss */
+#columns {
+  height: 600px;
+  -webkit-column-count: 3;
+  -webkit-column-width: 140px;
+  -webkit-column-gap: 25px;
+}
+
+/* line 14, ../sass/styles.scss */
+#viewport {
+  width: 900px;
+  height: 600px;
+}
+
+/* line 15, ../sass/styles.scss */
+#flowedContent, #fixedContent {
+  display: none;
+}
+
+/* line 17, ../sass/styles.scss */
+#article_reader {
+  overflow-x: scroll;
+}
