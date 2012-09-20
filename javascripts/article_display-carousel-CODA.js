@@ -7,7 +7,7 @@ $.fn.infiniteCarousel = function () {
     return this.each(function () {
         var $wrapper = $('> div', this).css('overflow', 'hidden'),
             $slider = $wrapper.find('.cf-render-area'),
-            $items = $slider.find('.cf-column'),
+            $items = $slider.find('.cf-page'),
             $single = $items.filter(':first'),
             
             singleWidth = $single.outerWidth(), //get width of single column
