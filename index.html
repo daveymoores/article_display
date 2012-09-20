@@ -156,8 +156,10 @@
 		function update(){
 			
 			contVisible.find('.cf-column').each(function(i){
-				$('#pagination').append('<li class="pag_' + i + '"><a href="#_"></a></li>');
-				$('#pagination').find('li:first').addClass('active');
+
+					$('#pagination').append('<li class="pag_' + i + '"><a href="#_"></a></li>');
+					$('#pagination').find('li:first').addClass('active');
+			
 			});
 			
 		}
