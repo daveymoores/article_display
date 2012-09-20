@@ -25,7 +25,7 @@
 
 /* line 17, ../sass/styles.scss */
 #article_reader {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 /* line 21, ../sass/styles.scss */
@@ -39,26 +39,41 @@
 #controls .navigation {
   float: left;
 }
-/* line 31, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
+#controls .navigation a i {
+  font-size: 25px;
+  color: #222;
+}
+/* line 33, ../sass/styles.scss */
+#controls .navigation a i:hover {
+  color: #666;
+  cursor: pointer;
+}
+/* line 43, ../sass/styles.scss */
 #controls ul {
   margin: 0px;
   padding: 0px;
 }
-/* line 36, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 #controls li {
   list-style: none;
   float: left;
-  padding: 5px 10px;
+  padding: 5px;
 }
-/* line 42, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 #controls #pagination {
   float: right;
+  margin-top: 10px;
 }
-/* line 45, ../sass/styles.scss */
-#controls #pagination li.active {
-  background-color: #333;
+/* line 58, ../sass/styles.scss */
+#controls #pagination li a {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background: url(../images/sprite_pagination.png) 0px 0px no-repeat;
+  display: block;
 }
-/* line 47, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 #controls #pagination li.active a {
-  color: #fff;
+  background: url(../images/sprite_pagination.png) 0px -19px no-repeat;
 }

@@ -15,7 +15,7 @@
 #flowedContent, #fixedContent { display: none; }
 
 #article_reader {
-	overflow-x: scroll;
+	overflow-x: hidden;
 }
 
 #controls {
@@ -26,6 +26,18 @@
 	
 	.navigation {
 		float: left;
+		a {
+			i {
+				font-size: 25px;
+				color: #222;
+				&:hover {
+					color: #666;
+					cursor: pointer;
+				}
+			}
+
+		}
+		
 	}
 	
 	ul {
@@ -36,16 +48,23 @@
 	li {
 		list-style: none;
 		float: left;
-		padding: 5px 10px;
+		padding: 5px;
 	}
 
 	#pagination {
 		float: right;
+		margin-top: 10px;
 		li {
+			a {
+				height: 20px;
+				width: 20px;
+				cursor: pointer;
+				background: url(../images/sprite_pagination.png) 0px 0px no-repeat;
+				display: block;
+			}
 			&.active {
-				background-color: #333;
 				a {
-					color: #fff;
+					background: url(../images/sprite_pagination.png) 0px -19px no-repeat;
 				}
 			}
 		}

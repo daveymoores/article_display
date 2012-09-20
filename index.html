@@ -32,6 +32,8 @@
 			<h4>Working on a way to display articles for a portfolio site.</h4>
 		</div>
 		
+		<div id="data" class="panel"></div>
+		
 		<div class="panel" id="article_reader">
 			
 			
@@ -86,8 +88,8 @@
 		
 		<div id="controls" class="panel">
 			<ul class="navigation">
-				<li><a href="#_" id="back">Back</a></li>
-				<li><a href="#_" id="forward">Forward</a></li>
+				<li><a href="#_" id="back"><i class="foundicon-left-arrow"></i></a></li>
+				<li><a href="#_" id="forward"><i class="foundicon-right-arrow"></i></a></li>
 			</ul>
 			
 		</div>
@@ -161,9 +163,7 @@
 		function update(){
 			
 			contVisible.find('.cf-column').each(function(i){
-				$(this).addClass('visible_' + i);
-				
-				$('#pagination').append('<li><a href="#_">View column ' + i + '</a></li>');
+				$('#pagination').append('<li class="pag_' + i + '"><a href="#_"></a></li>');
 				$('#pagination').find('li:first').addClass('active');
 			});
 			
@@ -171,6 +171,7 @@
 		
 		
 		//build pagination
+		$('#data').append('<h5>There are ' + contVisible.find('.cf-page').length + ' pages and ' + contVisible.find('.cf-column').length + ' columns in this article</h5>');
 		$('#controls').append('<ul id="pagination"></ul>');
 		update();
 		
