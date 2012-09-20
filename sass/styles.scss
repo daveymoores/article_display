@@ -17,3 +17,37 @@
 #article_reader {
 	overflow-x: scroll;
 }
+
+#controls {
+	float: left;	
+	width: 100%;
+	margin-bottom: 100px;
+	margin-top: 0px;
+	
+	.navigation {
+		float: left;
+	}
+	
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	li {
+		list-style: none;
+		float: left;
+		padding: 5px 10px;
+	}
+
+	#pagination {
+		float: right;
+		li {
+			&.active {
+				background-color: #333;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

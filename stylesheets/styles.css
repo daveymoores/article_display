@@ -27,3 +27,38 @@
 #article_reader {
   overflow-x: scroll;
 }
+
+/* line 21, ../sass/styles.scss */
+#controls {
+  float: left;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 0px;
+}
+/* line 27, ../sass/styles.scss */
+#controls .navigation {
+  float: left;
+}
+/* line 31, ../sass/styles.scss */
+#controls ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 36, ../sass/styles.scss */
+#controls li {
+  list-style: none;
+  float: left;
+  padding: 5px 10px;
+}
+/* line 42, ../sass/styles.scss */
+#controls #pagination {
+  float: right;
+}
+/* line 45, ../sass/styles.scss */
+#controls #pagination li.active {
+  background-color: #333;
+}
+/* line 47, ../sass/styles.scss */
+#controls #pagination li.active a {
+  color: #fff;
+}
