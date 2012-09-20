@@ -67,11 +67,16 @@
 
 					
 		</div>
+		
+		<a href="#_" class="back">Back</a>
+		<a href="#_" class="forward">Forward</a>
 	</div>
 	
 	
 	<!-- Included JS Files (Uncompressed) -->
 	<script src="javascripts/foundation/jquery.js"></script>
+	
+	<script src='javascripts/FTColumnflow.js'></script>
 	
 	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
 	
@@ -97,14 +102,14 @@
 	
 	<script src="javascripts/foundation/jquery.placeholder.js"></script>
 	
-	<script src='javascripts/FTColumnflow.js'></script>
+	<script src='javascripts/article_display-carousel.js'></script>
 	
 	
   <!-- Application Javascript, safe to override -->
   <script src="javascripts/foundation/app.js"></script>
   
   
-	<script type="text/javascript">
+	<script>
 
 		var cf = new FTColumnflow('target', 'viewport', {
 			columnCount:           3,
@@ -114,6 +119,18 @@
 
 		cf.flow(document.getElementById('flowedContent'), document.getElementById('fixedContent'));
 
+	</script>
+	
+	<script>
+	//init the plugin
+	setTimeout(function(){
+		
+		$(document).ready(function () {
+		  $('#article_reader').infiniteCarousel();
+		});
+		
+	}, 2000);
+	
 	</script>
 	
   
