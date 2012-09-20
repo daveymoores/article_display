@@ -5603,17 +5603,21 @@ div.progress.round .meter {
   padding: 0px;
 }
 /* line 48, ../sass/styles.scss */
+#controls .italic {
+  font-style: italic;
+}
+/* line 50, ../sass/styles.scss */
 #controls li {
   list-style: none;
   float: left;
   padding: 5px;
 }
-/* line 54, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 #controls #pagination {
   float: right;
   margin-top: 10px;
 }
-/* line 58, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 #controls #pagination li a {
   height: 20px;
   width: 20px;
@@ -5621,7 +5625,7 @@ div.progress.round .meter {
   background: url(../images/sprite_pagination.png) 0px 0px no-repeat;
   display: block;
 }
-/* line 66, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 #controls #pagination li.active a {
   background: url(../images/sprite_pagination.png) 0px -19px no-repeat;
 }
