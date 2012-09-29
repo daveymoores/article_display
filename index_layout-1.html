@@ -38,6 +38,10 @@
 		
 		<div class="panel" id="article_reader">
 			
+			<ul id="display_options">
+				<li class="horizontal"><a href="#_"></a></li>
+				<li class="vertical"><a href="#_"></a></li>
+			</ul>
 			
 			<div id="viewport">
 					<div id="target">
@@ -141,6 +145,17 @@
 
 		
 	$(document).ready(function () {
+		
+		$('#display_options').find('li').on('click', function(){
+			if($(this).hasClass('horizontal')) {
+				$('#viewport').fadeOut(200);
+			} else if($(this).hasClass('vertical')) {
+				setTimeout(function(){
+					$('#flowedContent').fadeIn(200);
+				});
+			}
+		});
+		
 		
 		$('.fancybox').fancybox();
 		

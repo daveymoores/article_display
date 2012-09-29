@@ -81,3 +81,25 @@
 #controls #pagination li.active a {
   background: url(../images/sprite_pagination.png) 0px -19px no-repeat;
 }
+
+/* line 77, ../sass/styles.scss */
+#display_options li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+/* line 87, ../sass/styles.scss */
+#display_options li:hover {
+  background-color: #E6E6E6;
+  border: 1px solid #B3B3B3;
+}
+/* line 91, ../sass/styles.scss */
+#display_options li:active {
+  box-shadow: inset 0px 0px 2px #333;
+  border: 1px solid #B3B3B3;
+}

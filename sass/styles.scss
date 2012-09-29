@@ -72,3 +72,25 @@
 		}
 	}
 }
+
+#display_options {
+	li {
+		list-style: none;
+		float: left;
+		margin-right: 10px;
+		height: 20px;
+		width: 20px;
+		border-radius: 3px;
+		background-color: #ffffff;
+		cursor: pointer;
+		
+		&:hover {
+			background-color: #E6E6E6;
+			border: 1px solid #B3B3B3;
+		}
+		&:active {
+			box-shadow: inset 0px 0px 2px #333;
+			border: 1px solid #B3B3B3;
+		}
+	}
+}
