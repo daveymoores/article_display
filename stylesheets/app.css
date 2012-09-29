@@ -5631,23 +5631,80 @@ div.progress.round .meter {
 }
 
 /* line 77, ../sass/styles.scss */
+#fixedContent .col-span-2 {
+  width: 100%;
+  text-align: center;
+}
+/* line 81, ../sass/styles.scss */
+#fixedContent figure {
+  float: left;
+}
+
+/* line 86, ../sass/styles.scss */
+#flowedContent {
+  float: left;
+  margin-top: 20px;
+}
+
+/* line 91, ../sass/styles.scss */
+#display_options {
+  display: inline-block;
+}
+/* line 93, ../sass/styles.scss */
 #display_options li {
   list-style: none;
   float: left;
   margin-right: 10px;
   height: 20px;
   width: 20px;
-  border-radius: 3px;
   background-color: #ffffff;
   cursor: pointer;
+  border: 1px solid #B3B3B3;
+  padding: 2px 1px 2px 2px;
 }
-/* line 87, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 #display_options li:hover {
   background-color: #E6E6E6;
-  border: 1px solid #B3B3B3;
 }
-/* line 91, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 #display_options li:active {
-  box-shadow: inset 0px 0px 2px #333;
-  border: 1px solid #B3B3B3;
+  box-shadow: inset 0px 0px 3px #999;
+  border: 1px solid #7F7F7F;
+}
+/* line 111, ../sass/styles.scss */
+#display_options li.active {
+  box-shadow: inset 0px 0px 3px #999;
+  border: 1px solid #7F7F7F;
+}
+/* line 115, ../sass/styles.scss */
+#display_options li.active span {
+  background-color: #333;
+}
+/* line 121, ../sass/styles.scss */
+#display_options li.horizontal span {
+  width: 14px;
+  display: block;
+  float: left;
+  margin-bottom: 2px;
+  height: 3px;
+  background-color: #999999;
+  border-radius: 2px;
+}
+/* line 132, ../sass/styles.scss */
+#display_options li.horizontal.active span {
+  background-color: #333;
+}
+/* line 138, ../sass/styles.scss */
+#display_options li.vertical span {
+  height: 14px;
+  display: block;
+  float: left;
+  width: 3px;
+  margin-right: 2px;
+  background-color: #999999;
+  border-radius: 2px;
+}
+/* line 149, ../sass/styles.scss */
+#display_options li.vertical.active span {
+  background-color: #333;
 }
