@@ -30,8 +30,8 @@
 
 	<div class="row">
 		<div class="">
-			<h1>Article display</h1>
-			<h4>Working on a way to display articles for a portfolio site.</h4>
+			<h1>Portfolio page</h1>
+			<h4>Article 2</h4>
 		</div>
 		
 		<div id="data" class=""></div>
@@ -99,6 +99,27 @@
 		</div>
 		
 		<div id="pages"></div>
+		
+		
+		<div class="row add_articles">
+			<div class="art_block left">
+				<a href="#_">
+					<span></span>
+					<img src="http://placehold.it/100x100" alt="placeholder" >
+					<h3>Article 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod...</p>
+				</a>
+			</div>
+			
+			<div class="art_block right">
+				<a href="#_">
+					<span></span>
+					<img src="http://placehold.it/100x100" alt="placeholder" >
+					<h3>Article 3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod...</p>
+				</a>
+			</div>
+		</div>
 		
 		
 	</div>
@@ -227,7 +248,8 @@
 		
 		
 		//build pagination
-		$('#data').append('<h5>There are ' + contVisible.find('.cf-page').length + ' pages and ' + contVisible.find('.cf-column').length + ' columns in this article</h5>');
+		//$('#data').append('<h5>There are ' + contVisible.find('.cf-page').length + ' pages and ' + contVisible.find('.cf-column').length + ' columns in this article</h5>');
+		
 		$('#pages').append('<ul id="pagination"></ul>');
 		update();
 		

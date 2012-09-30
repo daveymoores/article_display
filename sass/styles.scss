@@ -1,4 +1,11 @@
 /**my stles for article display**/
+body, p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ol li {
+	font-style: italic;
+}
 
 .panel {
 	margin: 30px 0px;
@@ -209,6 +216,60 @@
 		
 	}
 }
+
+/**article blocks**/
+.art_block {
+	float: left;
+	width: 450px;
+	margin: 30px 0px 20px;
+	background-color: #ffffff;
+	-moz-transition: background-color 0.2s linear;    /* FF3.7+ */
+	  -o-transition: background-color 0.2s linear;      /* Opera 10.5 */
+	  -webkit-transition: background-color 0.2s linear; /* Saf3.2+, Chrome */
+	  height: 120px;
+	  padding: 10px;
+	  
+	  &:hover {
+	  	background-color: #F0F0F0;
+	  }
+	
+	h3 {
+		margin: 0px 0px 10px;
+	}
+	
+	p {
+		margin-bottom: 0px;
+	}
+	
+	span {
+		display: block;
+		height: 100px;
+		width: 100px;	
+	}
+	
+	&.left {
+		margin-right: 100px;
+		margin-left: 15px;
+		
+		img { float: left; padding-right: 15px; }
+		
+		span {
+			background: transparent url(../images/left_arrow-lrg.png) no-repeat 0px 0px;
+			float: left;
+		}
+	}
+	&.right {
+		text-align: right;
+		
+		img { float: right; padding-left: 15px; }
+		
+		span {
+			background: transparent url(../images/right_arrow-lrg.png) no-repeat 0px 0px;
+			float: right;
+		}
+	}
+}
+
 
 /**control animation**/
 #controls .slide-fromside li.back {
