@@ -25,114 +25,178 @@
 
 /* line 17, ../sass/styles.scss */
 #article_reader {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* line 21, ../sass/styles.scss */
+#article_reader.shadow {
+  box-shadow: inset 0px 0px 7px #b3b3b3;
+}
+
+/* line 25, ../sass/styles.scss */
 #controls {
   float: left;
   width: 100%;
-  margin-bottom: 100px;
-  margin-top: 0px;
+  margin-top: -325px;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
 }
-/* line 27, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 #controls .navigation {
   float: left;
+  position: absolute;
+  width: 1000px;
 }
-/* line 30, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 #controls .navigation a i {
   font-size: 25px;
   color: #222;
 }
-/* line 33, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #controls .navigation a i:hover {
   color: #666;
   cursor: pointer;
 }
-/* line 43, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 #controls ul {
   margin: 0px;
   padding: 0px;
 }
-/* line 48, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 #controls .italic {
   font-style: italic;
 }
-/* line 50, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 #controls li {
   list-style: none;
   float: left;
   padding: 5px;
+  height: 50px;
+  width: 50px;
+  background: transparent url(../images/opacity-45.png) repeat 0 0;
+  position: absolute;
 }
-/* line 56, ../sass/styles.scss */
-#controls #pagination {
-  float: right;
-  margin-top: 10px;
+/* line 67, ../sass/styles.scss */
+#controls li.back {
+  left: -10%;
 }
-/* line 60, ../sass/styles.scss */
-#controls #pagination li a {
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-  background: url(../images/sprite_pagination.png) 0px 0px no-repeat;
+/* line 70, ../sass/styles.scss */
+#controls li.forward {
+  right: -10%;
+}
+/* line 74, ../sass/styles.scss */
+#controls li a#back {
+  background: transparent url(../images/left_arrow.png) no-repeat -4px -4px;
+  height: 50px;
+  width: 50px;
   display: block;
 }
-/* line 68, ../sass/styles.scss */
-#controls #pagination li.active a {
-  background: url(../images/sprite_pagination.png) 0px -19px no-repeat;
+/* line 81, ../sass/styles.scss */
+#controls li a#forward {
+  background: transparent url(../images/right_arrow.png) no-repeat -3px -5px;
+  height: 50px;
+  width: 50px;
+  display: block;
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
+#pages {
+  position: absolute;
+  width: 1000px;
+}
+
+/* line 94, ../sass/styles.scss */
+#pagination {
+  margin: 0px auto 20px;
+  width: 110px;
+  margin-top: -30px;
+  height: 30px;
+  padding: 5px;
+  background: transparent url(../images/opacity-45.png) repeat 0 0;
+}
+/* line 102, ../sass/styles.scss */
+#pagination li {
+  float: left;
+  list-style: none;
+}
+/* line 105, ../sass/styles.scss */
+#pagination li a {
+  height: 2px;
+  width: 20px;
+  cursor: pointer;
+  display: block;
+  background-color: #E6E6E6;
+  /*border-top: 1px solid #B3B3B3;
+  			border-bottom: 1px solid #B3B3B3;
+  			&:first{
+  				border-left: 1px solid #B3B3B3;
+  			}
+  			&:last{
+  				border-right: 1px solid #B3B3B3;
+  			}*/
+}
+/* line 121, ../sass/styles.scss */
+#pagination li.active a {
+  background-color: #222;
+}
+
+/* line 129, ../sass/styles.scss */
 #fixedContent .col-span-2 {
   width: 100%;
   text-align: center;
 }
-/* line 81, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 #fixedContent figure {
   float: left;
 }
 
-/* line 86, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 #flowedContent {
   float: left;
   margin-top: 20px;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 #display_options {
   display: inline-block;
 }
-/* line 93, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 #display_options li {
   list-style: none;
   float: left;
   margin-right: 10px;
   height: 20px;
-  width: 20px;
+  width: 21px;
   background-color: #ffffff;
   cursor: pointer;
   border: 1px solid #B3B3B3;
-  padding: 2px 1px 2px 2px;
+  padding: 2px 0px 2px 3px;
 }
-/* line 104, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 #display_options li:hover {
   background-color: #E6E6E6;
 }
-/* line 107, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 #display_options li:active {
   box-shadow: inset 0px 0px 3px #999;
   border: 1px solid #7F7F7F;
 }
-/* line 111, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 #display_options li.active {
   box-shadow: inset 0px 0px 3px #999;
   border: 1px solid #7F7F7F;
 }
-/* line 115, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 #display_options li.active span {
   background-color: #333;
 }
-/* line 121, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
+#display_options li.horizontal {
+  width: 20px;
+  padding-left: 2px;
+}
+/* line 175, ../sass/styles.scss */
 #display_options li.horizontal span {
   width: 14px;
   display: block;
@@ -142,11 +206,11 @@
   background-color: #999999;
   border-radius: 2px;
 }
-/* line 132, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 #display_options li.horizontal.active span {
   background-color: #333;
 }
-/* line 138, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 #display_options li.vertical span {
   height: 14px;
   display: block;
@@ -156,7 +220,85 @@
   background-color: #999999;
   border-radius: 2px;
 }
-/* line 149, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 #display_options li.vertical.active span {
   background-color: #333;
+}
+
+/**control animation**/
+/* line 214, ../sass/styles.scss */
+#controls .slide-fromside li.back {
+  -webkit-animation: fromleftAnim 0.2s ease-out 0s both;
+}
+
+/* line 217, ../sass/styles.scss */
+#controls .slide-fromside li.forward {
+  -webkit-animation: fromrightAnim 0.2s ease-out 0s both;
+}
+
+/* line 221, ../sass/styles.scss */
+#controls .slide-fromsideHid li.back {
+  -webkit-animation: fromleftAnimHid 0.4s ease-in 0s both;
+}
+
+/* line 224, ../sass/styles.scss */
+#controls .slide-fromsideHid li.forward {
+  -webkit-animation: fromrightAnimHid 0.4s ease-in 0s both;
+}
+
+/**from top to bottom animation**/
+@-webkit-keyframes fromleftAnim {
+  /* line 232, ../sass/styles.scss */
+  0% {
+    left: -10%;
+    opacity: 0;
+  }
+
+  /* line 233, ../sass/styles.scss */
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromrightAnim {
+  /* line 237, ../sass/styles.scss */
+  0% {
+    right: -10%;
+    opacity: 0;
+  }
+
+  /* line 238, ../sass/styles.scss */
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromleftAnimHid {
+  /* line 242, ../sass/styles.scss */
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+
+  /* line 243, ../sass/styles.scss */
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fromrightAnimHid {
+  /* line 247, ../sass/styles.scss */
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+
+  /* line 248, ../sass/styles.scss */
+  100% {
+    right: -10%;
+    opacity: 0;
+  }
 }

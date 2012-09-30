@@ -29,14 +29,14 @@
 <body>
 
 	<div class="row">
-		<div class="panel">
+		<div class="">
 			<h1>Article display</h1>
 			<h4>Working on a way to display articles for a portfolio site.</h4>
 		</div>
 		
-		<div id="data" class="panel"></div>
+		<div id="data" class=""></div>
 		
-		<div class="panel">
+		<div>
 			<ul id="display_options">
 				<li class="horizontal active">
 					<span></span>
@@ -51,7 +51,7 @@
 			</ul>
 		</div>
 		
-		<div class="panel" id="article_reader">
+		<div id="article_reader" class="shadow">
 			
 			<div id="viewport">
 					<div id="target">
@@ -90,16 +90,17 @@
 				</div>
 				
 			
-					
+				<div id="controls">
+					<ul class="navigation">
+						<li class="back"><a href="#_" id="back"></a></li>
+						<li class="forward"><a href="#_" id="forward"></a></li>
+					</ul>
+				</div>			
 		</div>
 		
-		<div id="controls" class="panel">
-			<ul class="navigation">
-				<li><a href="#_" id="back"><i class="foundicon-left-arrow"></i></a></li>
-				<li><a href="#_" id="forward"><i class="foundicon-right-arrow"></i></a></li>
-			</ul>
-			
-		</div>
+		<div id="pages"></div>
+		
+		
 	</div>
 	
 	
@@ -158,6 +159,20 @@
 		
 	$(document).ready(function () {
 		
+		$('#article_reader').on('mouseenter', function(){
+			
+			$('#controls').find('.navigation').removeClass('slide-fromsideHid').addClass('slide-fromside');
+			
+		}); 
+		
+		$('#article_reader').on('mouseleave', function(){
+			
+			$('#controls').find('.navigation').removeClass('slide-fromside').addClass('slide-fromsideHid');
+			
+		});
+		
+		
+		
 		$('#display_options').find('li').on('click', function(){
 				
 			$(this).parent().find('.active').removeClass('active');
@@ -168,6 +183,8 @@
 				$('#flowedContent').fadeOut(200);
 				$('#controls').fadeIn(200);
 				$('#fixedContent').fadeOut(200);
+				$('#article_reader').addClass('shadow');
+				$('#pages').fadeIn(200);
 				
 				$(this).addClass('active');
 				
@@ -177,6 +194,8 @@
 				$('#flowedContent').fadeIn(200);
 				$('#fixedContent').fadeIn(200).find('.col-span-2').css('width', '100%');
 				$('#controls').fadeOut(200);
+				$('#article_reader').removeClass('shadow');
+				$('#pages').fadeOut(200);
 				
 				$(this).addClass('active');
 				
@@ -209,7 +228,7 @@
 		
 		//build pagination
 		$('#data').append('<h5>There are ' + contVisible.find('.cf-page').length + ' pages and ' + contVisible.find('.cf-column').length + ' columns in this article</h5>');
-		$('#controls').append('<ul id="pagination"></ul>');
+		$('#pages').append('<ul id="pagination"></ul>');
 		update();
 		
 		
