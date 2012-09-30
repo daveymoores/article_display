@@ -158,18 +158,18 @@ ol li {
 		width: 21px;
 		background-color: #ffffff;
 		cursor: pointer;
-		border: 1px solid #B3B3B3;
+		border: 1px solid #F0F0F0;
 		padding: 2px 0px 2px 3px;
 		
 		&:hover {
 			background-color: #E6E6E6;
 		}
 		&:active {
-			box-shadow: inset 0px 0px 3px #999;
+			box-shadow: inset 0px 0px 3px #ccc;
 			border: 1px solid #7F7F7F;
 		}
 		&.active {
-			box-shadow: inset 0px 0px 3px #999;
+			box-shadow: inset 0px 0px 3px #ccc;
 			border: 1px solid #7F7F7F;
 			
 			span {
@@ -215,6 +215,23 @@ ol li {
 			}
 		}
 		
+	}
+}
+
+footer {
+	background-color: #333333; 
+	box-shadow: inset 0px 7px 5px #2c2c2c;
+	min-height: 300px;
+	width: 100%;
+	
+	#footer {
+		width: 1000px;
+		
+		
+		p {
+			margin-top: 40px;
+			color: white;
+		}
 	}
 }
 
