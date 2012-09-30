@@ -95,10 +95,12 @@
 						<li class="back"><a href="#_" id="back"></a></li>
 						<li class="forward"><a href="#_" id="forward"></a></li>
 					</ul>
-				</div>			
+				</div>	
+				
+				<div id="pages"></div>
+				
 		</div>
 		
-		<div id="pages"></div>
 		
 		
 		<div class="row add_articles">
@@ -183,12 +185,20 @@
 		$('#article_reader').on('mouseenter', function(){
 			
 			$('#controls').find('.navigation').removeClass('slide-fromsideHid').addClass('slide-fromside');
+			$('#pagination').stop().animate({
+				marginTop: '-30px',
+				opacity: 1
+			}, 200);
 			
 		}); 
 		
 		$('#article_reader').on('mouseleave', function(){
 			
 			$('#controls').find('.navigation').removeClass('slide-fromside').addClass('slide-fromsideHid');
+			$('#pagination').stop().animate({
+				marginTop: '0px',
+				opacity: 0
+			}, 300);
 			
 		});
 		

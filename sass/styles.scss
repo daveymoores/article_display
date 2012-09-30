@@ -23,6 +23,7 @@ ol li {
 
 #article_reader {
 	overflow: hidden;
+	position: relative;
 }
 
 #article_reader.shadow {
@@ -101,7 +102,7 @@ ol li {
 #pagination {
 	margin: 0px auto 20px;
 	width: 110px;
-	margin-top: -30px;
+	margin-top: 0px;
 	height: 30px;
 	padding: 5px;
 	background: transparent url(../images/opacity-45.png) repeat 0 0;
