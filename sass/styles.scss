@@ -3,6 +3,56 @@ body, p {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+a {
+	color: #888888;
+	font-size: 13px;
+	
+	&:hover {
+		color: #222222;
+	}
+}
+
+header {
+	border-bottom: 1px solid #e3e3e3;
+	
+	
+	&.row {
+	margin-bottom: 10px;
+		 h1 {
+			font-size: 16px;
+			margin: 20px 0px 10px;
+			font-family: Georgia, "Times New Roman", Times, serif;	
+			font-weight: normal;
+		}
+	}
+	
+}
+
+.login {
+	float: right;
+}
+
+.top_menu {
+	float: left;
+	
+	li {
+		list-style: none;
+		float: left;
+		margin-right: 10px;
+		
+		&.active {
+			a {
+				color: #222222;
+			}
+		}
+		
+		a {
+			font-weight: normal;
+		}
+	}
+}
+
+
 ol li {
 	font-style: italic;
 }
@@ -24,6 +74,7 @@ ol li {
 #article_reader {
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 20px;
 }
 
 #article_reader.shadow {
@@ -67,7 +118,7 @@ ol li {
 		list-style: none;
 		float: left;
 		padding: 5px;
-		height: 50px;
+		height: 600px;
 		width: 50px;
 		background: transparent url(../images/opacity-45.png) repeat 0 0;
 		position: absolute;
@@ -219,18 +270,22 @@ ol li {
 }
 
 footer {
-	background-color: #333333; 
-	box-shadow: inset 0px 7px 5px #2c2c2c;
-	min-height: 300px;
+	min-height: 100px;
 	width: 100%;
 	
 	#footer {
 		width: 1000px;
 		
 		
-		p {
-			margin-top: 40px;
-			color: #E6E6E6;
+		a {
+			margin-top: 20px;
+			color: #888888;
+			font-size: 12px;
+			float: right;
+			
+			&:hover {
+				color: #222222;
+			}
 		}
 	}
 }
@@ -326,3 +381,39 @@ footer {
     0%{ right: 0%; opacity: 1; }
     100%{ right: -10%; opacity: 0; }
 }
+
+
+/**contents page**/
+.main_menu {
+	margin: 0px auto;
+	
+	.contents {
+		text-align: center;
+		list-style: none;
+		
+		li {
+			margin: 20px 0px;
+			
+			a {
+				color: #888888;
+				font-size: 16px;
+				
+				&:hover {
+					color: #222222;
+				}
+			}
+		}
+	}	
+}
+
+/**end contents page**/
+
+
+/**media page**/
+.media_content {
+	.row {
+		margin-bottom: 30px;
+	}	
+}
+
+/**end media page**/
